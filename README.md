@@ -22,7 +22,7 @@ portfolio/
 │   └── contato.js      valida o formulário e abre o WhatsApp com a mensagem
 └── img/
     ├── favicon.svg     ícone da aba
-    ├── foto.svg        espaço da foto da página inicial
+    ├── foto.jpg        minha foto da página inicial
     └── fotos/          fotos da página Sobre
 ```
 
@@ -36,7 +36,7 @@ portfolio/
 
 ## Como trocar a foto
 
-Salve sua foto na pasta `img` com o nome `foto.jpg` e, no `index.html`, troque `img/foto.svg` por `img/foto.jpg`.
+Salve a nova foto (de preferência quadrada) na pasta `img` com o nome `foto.jpg`, substituindo a atual.
 
 ## Como atualizar o site
 
