@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Capa: Sertanejo (chapéu e violão ao pôr do sol) -->
+  <defs>
+    <linearGradient id="ceu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c2d12"/>
+      <stop offset=".6" stop-color="#ea580c"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#ceu)"/>
+  <circle cx="200" cy="250" r="90" fill="#fde68a" opacity=".85"/>
+  <!-- Morros -->
+  <path d="M0 300 C 80 250, 140 280, 200 270 C 270 258, 330 230, 400 260 V400 H0 Z" fill="#78350f"/>
+  <path d="M0 340 C 100 310, 220 330, 400 300 V400 H0 Z" fill="#451a03"/>
+
+  <!-- Violão -->
+  <g transform="rotate(-28 200 230)">
+    <rect x="193" y="70" width="14" height="120" rx="3" fill="#3f1d0b"/>
+    <rect x="188" y="56" width="24" height="22" rx="5" fill="#3f1d0b"/>
+    <ellipse cx="200" cy="215" rx="42" ry="40" fill="#b45309"/>
+    <ellipse cx="200" cy="268" rx="54" ry="50" fill="#b45309"/>
+    <circle cx="200" cy="236" r="15" fill="#3f1d0b"/>
+    <rect x="182" y="285" width="36" height="8" rx="3" fill="#3f1d0b"/>
+    <g stroke="#fde68a" stroke-width="1.5">
+      <line x1="196" y1="62" x2="196" y2="289"/>
+      <line x1="200" y1="62" x2="200" y2="289"/>
+      <line x1="204" y1="62" x2="204" y2="289"/>
+    </g>
+  </g>
+
+  <!-- Chapéu -->
+  <g transform="translate(0 12)">
+    <ellipse cx="200" cy="98" rx="110" ry="22" fill="#d6a35c"/>
+    <path d="M140 96 C 140 40, 170 30, 200 46 C 230 30, 260 40, 260 96 Z" fill="#e8b96f"/>
+    <path d="M142 84 C 180 92, 220 92, 258 84 L 259 96 C 220 104, 180 104, 141 96 Z" fill="#7c2d12"/>
+  </g>
+
+</svg>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Música, o hobby de Seu Nome: os estilos que fazem parte do dia e o que a música ensina sobre vendas.">
+  <title>Música | Seu Nome</title>
+
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script src="../js/theme.js"></script>
+</head>
+<body data-page="musica">
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="logo" aria-label="Página inicial">Seu Nome<span class="logo__dot">.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link" data-nav="inicio">Início</a></li>
+          <li><a href="sobre.html" class="nav__link" data-nav="sobre">Sobre</a></li>
+          <li><a href="musica.html" class="nav__link" data-nav="musica">Música</a></li>
+          <li><a href="contato.html" class="nav__link" data-nav="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= TÍTULO DA PÁGINA ================= -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb reveal"><a href="../index.html">Início</a> / Música</p>
+        <h1 class="page-hero__title reveal">Música é o meu <span class="gradient-text">hobby</span></h1>
+        <p class="page-hero__subtitle reveal delay-1">Escutar música é o que eu mais gosto de fazer no tempo livre — e, de certa forma, ela também me ajuda no trabalho.</p>
+      </div>
+    </section>
+
+    <!-- ================= MINHA RELAÇÃO COM A MÚSICA ================= -->
+    <section class="section section--flush-top">
+      <div class="container about about--reverse">
+        <div class="about__image about__image--round reveal">
+          <img src="../img/musica/fones.svg" alt="Ilustração de fones de ouvido cercados de notas musicais" width="480" height="480" loading="lazy">
+        </div>
+
+        <div class="about__text reveal delay-1">
+          <span class="section__tag">Por que eu amo música</span>
+          <h2 class="section__title">A trilha sonora <span class="gradient-text">do meu dia</span></h2>
+          <p>
+            Não tem um momento do meu dia sem música. Ela me acompanha no caminho para o trabalho,
+            me dá energia antes de começar o expediente e é presença garantida quando estou com os amigos.
+          </p>
+          <p>
+            Não sou de um estilo só: vou do <strong>sertanejo</strong> ao <strong>rock</strong>, passando pelo
+            <strong>pagode</strong>, <strong>samba</strong>, <strong>funk</strong>, <strong>rap</strong>,
+            <strong>trap</strong> e <strong>pop</strong>. Cada um combina com um momento.
+          </p>
+
+          <ul class="moments">
+            <li class="moments__item"><i class="fa-solid fa-car-side" aria-hidden="true"></i> No caminho para o trabalho</li>
+            <li class="moments__item"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Para ganhar energia</li>
+            <li class="moments__item"><i class="fa-solid fa-users" aria-hidden="true"></i> Com os amigos</li>
+            <li class="moments__item"><i class="fa-solid fa-couch" aria-hidden="true"></i> Para relaxar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ESTILOS FAVORITOS ================= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Playlist</span>
+          <h2 class="section__title">Estilos que eu <span class="gradient-text">mais escuto</span></h2>
+          <p class="section__subtitle">Use os filtros para ver qual estilo combina com cada momento.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar estilos por momento">
+          <button class="filter-btn is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-btn" type="button" data-filter="animar" aria-pressed="false">Para animar</button>
+          <button class="filter-btn" type="button" data-filter="relaxar" aria-pressed="false">Para relaxar</button>
+          <button class="filter-btn" type="button" data-filter="amigos" aria-pressed="false">Com os amigos</button>
+        </div>
+        <p class="filters__count" id="filter-count" aria-live="polite">Mostrando 4 estilos</p>
+
+        <div class="grid grid--music">
+
+          <article class="music-card reveal" data-category="relaxar amigos">
+            <div class="music-card__image">
+              <img src="../img/musica/sertanejo.svg" alt="Capa ilustrada com chapéu e violão, representando o sertanejo" width="400" height="400" loading="lazy">
+            </div>
+            <div class="music-card__body">
+              <span class="music-card__category">Para relaxar · Com os amigos</span>
+              <h3 class="music-card__title">Sertanejo</h3>
+              <p class="music-card__text">Das modas de viola às músicas que tocam em todo lugar. É a trilha das viagens e dos encontros com a família.</p>
+              <ul class="tags">
+                <li class="tag">Viagem</li><li class="tag">Família</li><li class="tag">Para cantar junto</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="music-card reveal delay-1" data-category="amigos animar">
+            <div class="music-card__image">
+              <img src="../img/musica/pagode.svg" alt="Capa ilustrada com pandeiro, representando o pagode e o samba" width="400" height="400" loading="lazy">
+            </div>
+            <div class="music-card__body">
+              <span class="music-card__category">Com os amigos · Para animar</span>
+              <h3 class="music-card__title">Pagode e samba</h3>
+              <p class="music-card__text">Batuque, roda e muita conversa. Não existe fim de semana com os amigos sem um pagode tocando.</p>
+              <ul class="tags">
+                <li class="tag">Fim de semana</li><li class="tag">Amigos</li><li class="tag">Churrasco</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="music-card reveal delay-2" data-category="animar">
+            <div class="music-card__image">
+              <img src="../img/musica/rap.svg" alt="Capa ilustrada com microfone e caixas de som, representando funk, rap e trap" width="400" height="400" loading="lazy">
+            </div>
+            <div class="music-card__body">
+              <span class="music-card__category">Para animar</span>
+              <h3 class="music-card__title">Funk, rap e trap</h3>
+              <p class="music-card__text">Batidas fortes e letras sobre superação. É o que eu coloco para ganhar energia e foco antes de um dia de metas.</p>
+              <ul class="tags">
+                <li class="tag">Energia</li><li class="tag">Foco</li><li class="tag">Batida forte</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="music-card reveal delay-3" data-category="animar relaxar">
+            <div class="music-card__image">
+              <img src="../img/musica/rock.svg" alt="Capa ilustrada com guitarra elétrica, representando o rock e o pop" width="400" height="400" loading="lazy">
+            </div>
+            <div class="music-card__body">
+              <span class="music-card__category">Para animar · Para relaxar</span>
+              <h3 class="music-card__title">Rock e pop</h3>
+              <p class="music-card__text">Dos clássicos aos lançamentos. Combina com qualquer momento — do trânsito ao fim do dia.</p>
+              <ul class="tags">
+                <li class="tag">Clássicos</li><li class="tag">Fone de ouvido</li><li class="tag">Dia a dia</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MÚSICA E VENDAS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Música e trabalho</span>
+          <h2 class="section__title">O que a música me ensinou <span class="gradient-text">sobre vendas</span></h2>
+        </div>
+
+        <div class="grid grid--cards">
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-ear-listen" aria-hidden="true"></i></div>
+            <h3 class="card__title">Saber ouvir</h3>
+            <p class="card__text">Antes de indicar qualquer produto, eu escuto o cliente com a mesma atenção que dou a uma boa música.</p>
+          </article>
+          <article class="card reveal delay-1">
+            <div class="card__icon"><i class="fa-solid fa-drum" aria-hidden="true"></i></div>
+            <h3 class="card__title">Respeitar o ritmo</h3>
+            <p class="card__text">Cada atendimento tem o seu tempo: tem cliente que decide rápido e tem cliente que precisa de calma para escolher.</p>
+          </article>
+          <article class="card reveal delay-2">
+            <div class="card__icon"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+            <h3 class="card__title">Criar conexão</h3>
+            <p class="card__text">Assim como a música certa aproxima as pessoas, um bom atendimento cria confiança e faz o cliente voltar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAMADA PARA CONTATO ================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 class="cta__title">Bora <span class="gradient-text">conversar</span>?</h2>
+          <p class="cta__text">Seja para escolher um eletrônico novo ou trocar uma ideia sobre música, me chame!</p>
+          <a href="contato.html" class="btn btn--primary"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="../index.html" class="logo" aria-label="Página inicial">Seu Nome<span class="logo__dot">.</span></a>
+        <ul class="footer__links">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="musica.html">Música</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <ul class="social" aria-label="Redes sociais">
+          <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer__copy">&copy; <span data-year>2026</span> Seu Nome. Feito com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/musica.js" defer></script>
+</body>
+</html>

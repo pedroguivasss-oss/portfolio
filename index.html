@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seu Nome — vendedor de eletrônicos e tecnologia há mais de 5 anos, apaixonado por música.">
+  <title>Seu Nome | Vendedor</title>
+
+  <!-- Ícone da aba -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <!-- Fontes (Google Fonts) e ícones (Font Awesome) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Aplica o tema salvo antes da página aparecer (evita "piscar") -->
+  <script src="js/theme.js"></script>
+</head>
+<body data-page="inicio">
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Página inicial">Seu Nome<span class="logo__dot">.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link" data-nav="inicio">Início</a></li>
+          <li><a href="pages/sobre.html" class="nav__link" data-nav="sobre">Sobre</a></li>
+          <li><a href="pages/musica.html" class="nav__link" data-nav="musica">Música</a></li>
+          <li><a href="pages/contato.html" class="nav__link" data-nav="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="hero__greeting">Olá, eu sou 👋</p>
+          <h1 class="hero__title">Seu Nome</h1>
+          <p class="hero__role">
+            <span class="sr-only">Vendedor</span>
+            <span class="typing" aria-hidden="true" data-typing='["Vendedor", "Especialista em tecnologia", "Apaixonado por música"]'></span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero__desc">
+            Há mais de 5 anos ajudo clientes a escolher o celular, o notebook ou o eletrônico certo para o dia a dia.
+            Para mim, vender bem começa por saber ouvir — e, fora do trabalho, o que eu mais gosto de ouvir é música.
+          </p>
+          <div class="hero__buttons">
+            <a href="pages/sobre.html" class="btn btn--primary">Conheça minha história <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="pages/contato.html" class="btn btn--outline">Fale comigo</a>
+          </div>
+          <ul class="social" aria-label="Redes sociais">
+            <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:seuemail@exemplo.com" aria-label="E-mail"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="hero__image reveal delay-1">
+          <img src="img/avatar.svg" alt="Ilustração de Seu Nome com fones de ouvido" width="400" height="400">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COMO EU TRABALHO ================= -->
+    <section class="section section--alt" id="trabalho">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">O que eu faço</span>
+          <h2 class="section__title">Vendas com <span class="gradient-text">atendimento de verdade</span></h2>
+          <p class="section__subtitle">Trabalho com eletrônicos e tecnologia: celulares, notebooks, acessórios, smart TVs e planos de telefonia.</p>
+        </div>
+
+        <div class="grid grid--cards">
+          <article class="card reveal">
+            <div class="card__icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></div>
+            <h3 class="card__title">Atendimento consultivo</h3>
+            <p class="card__text">Entendo o que o cliente precisa antes de indicar um produto. O melhor aparelho é aquele que resolve o problema dele.</p>
+          </article>
+          <article class="card reveal delay-1">
+            <div class="card__icon"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
+            <h3 class="card__title">Conhecimento de produto</h3>
+            <p class="card__text">Acompanho os lançamentos e comparo modelos com clareza, explicando a parte técnica de um jeito simples.</p>
+          </article>
+          <article class="card reveal delay-2">
+            <div class="card__icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+            <h3 class="card__title">Negociação e pós-venda</h3>
+            <p class="card__text">Busco a melhor condição para o cliente e continuo disponível depois da compra — cliente satisfeito volta e indica.</p>
+          </article>
+        </div>
+
+        <ul class="stack reveal" aria-label="Minhas principais habilidades">
+          <li class="stack__item"><i class="fa-solid fa-comments" aria-hidden="true"></i> Comunicação</li>
+          <li class="stack__item"><i class="fa-solid fa-handshake" aria-hidden="true"></i> Negociação</li>
+          <li class="stack__item"><i class="fa-solid fa-bullseye" aria-hidden="true"></i> Foco em metas</li>
+          <li class="stack__item"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Tecnologia</li>
+          <li class="stack__item"><i class="fa-solid fa-users" aria-hidden="true"></i> Trabalho em equipe</li>
+          <li class="stack__item"><i class="fa-solid fa-heart" aria-hidden="true"></i> Relacionamento</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= MÚSICA (HOBBY) ================= -->
+    <section class="section" id="musica">
+      <div class="container music-teaser">
+        <div class="music-teaser__text reveal">
+          <span class="section__tag">Meu hobby</span>
+          <h2 class="section__title">Minha <span class="gradient-text">trilha sonora</span></h2>
+          <p>
+            Música está presente no meu dia inteiro: no caminho para o trabalho, para ganhar energia
+            antes de um dia de vendas e no fim de semana com os amigos.
+          </p>
+          <p>Escolha um estilo ao lado e veja quando ele toca na minha playlist.</p>
+          <a href="pages/musica.html" class="btn btn--outline">Ver minha página de música <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+
+        <!-- Seletor de estilos: os dados de cada estilo ficam nos atributos data-* dos botões -->
+        <div class="styles-widget reveal delay-1" data-styles>
+          <div class="styles-widget__tabs" role="tablist" aria-label="Estilos musicais">
+            <button class="style-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="style-panel"
+              data-cover="img/musica/sertanejo.svg" data-title="Sertanejo" data-moment="Na estrada e nos encontros com a família." data-energy="70">Sertanejo</button>
+            <button class="style-tab" type="button" role="tab" aria-selected="false" aria-controls="style-panel"
+              data-cover="img/musica/pagode.svg" data-title="Pagode e samba" data-moment="No fim de semana, reunido com os amigos." data-energy="78">Pagode e samba</button>
+            <button class="style-tab" type="button" role="tab" aria-selected="false" aria-controls="style-panel"
+              data-cover="img/musica/rap.svg" data-title="Funk, rap e trap" data-moment="Para ganhar energia antes de um dia cheio de vendas." data-energy="95">Funk, rap e trap</button>
+            <button class="style-tab" type="button" role="tab" aria-selected="false" aria-controls="style-panel"
+              data-cover="img/musica/rock.svg" data-title="Rock e pop" data-moment="No fone de ouvido, a qualquer hora do dia." data-energy="85">Rock e pop</button>
+          </div>
+
+          <div class="styles-widget__panel" id="style-panel" role="tabpanel">
+            <img class="styles-widget__cover" src="img/musica/sertanejo.svg" alt="" width="400" height="400" data-style-cover>
+            <div class="styles-widget__info" aria-live="polite">
+              <span class="styles-widget__label"><i class="fa-solid fa-headphones" aria-hidden="true"></i> Toca no meu dia</span>
+              <h3 class="styles-widget__title" data-style-title>Sertanejo</h3>
+              <p class="styles-widget__moment" data-style-moment>Na estrada e nos encontros com a família.</p>
+              <div class="energy">
+                <div class="energy__header"><span>Energia</span><span data-style-energy-text>70%</span></div>
+                <div class="energy__bar"><div class="energy__fill" data-style-energy></div></div>
+              </div>
+              <div class="equalizer" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAMADA PARA CONTATO ================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta reveal">
+          <h2 class="cta__title">Procurando um <span class="gradient-text">eletrônico novo</span>?</h2>
+          <p class="cta__text">Me conte o que você precisa e eu te ajudo a encontrar a melhor opção — sem complicação.</p>
+          <a href="pages/contato.html" class="btn btn--primary"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Falar comigo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="index.html" class="logo" aria-label="Página inicial">Seu Nome<span class="logo__dot">.</span></a>
+        <ul class="footer__links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="pages/sobre.html">Sobre</a></li>
+          <li><a href="pages/musica.html">Música</a></li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+        <ul class="social" aria-label="Redes sociais">
+          <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer__copy">&copy; <span data-year>2026</span> Seu Nome. Feito com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/estilos.js" defer></script>
+</body>
+</html>

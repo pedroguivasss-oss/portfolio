@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça Seu Nome: vendedor de eletrônicos e tecnologia há mais de 5 anos.">
+  <title>Sobre | Seu Nome</title>
+
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <script src="../js/theme.js"></script>
+</head>
+<body data-page="sobre">
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- ================= CABEÇALHO ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="logo" aria-label="Página inicial">Seu Nome<span class="logo__dot">.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link" data-nav="inicio">Início</a></li>
+          <li><a href="sobre.html" class="nav__link" data-nav="sobre">Sobre</a></li>
+          <li><a href="musica.html" class="nav__link" data-nav="musica">Música</a></li>
+          <li><a href="contato.html" class="nav__link" data-nav="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ================= TÍTULO DA PÁGINA ================= -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb reveal"><a href="../index.html">Início</a> / Sobre</p>
+        <h1 class="page-hero__title reveal">Sobre <span class="gradient-text">mim</span></h1>
+        <p class="page-hero__subtitle reveal delay-1">Minha história nas vendas, o que eu sei fazer de melhor e o que eu gosto de fazer fora do trabalho.</p>
+      </div>
+    </section>
+
+    <!-- ================= QUEM SOU EU ================= -->
+    <section class="section section--flush-top">
+      <div class="container about">
+        <div class="about__image reveal">
+          <img src="../img/sobre.svg" alt="Ilustração de um balcão de loja de eletrônicos com celulares, notebook e fones de ouvido" width="480" height="560" loading="lazy">
+        </div>
+
+        <div class="about__text reveal delay-1">
+          <span class="section__tag">Quem sou eu</span>
+          <h2 class="section__title">Prazer, eu sou <span class="gradient-text">Seu Nome</span></h2>
+          <p>
+            Sou <strong>vendedor há mais de 5 anos</strong> e trabalho com <strong>eletrônicos e tecnologia</strong>:
+            celulares, notebooks, acessórios, smart TVs e planos de telefonia.
+          </p>
+          <p>
+            O que eu mais gosto na profissão é o contato com as pessoas. Cada cliente chega com uma necessidade
+            diferente, e o meu trabalho é entender essa necessidade e explicar a tecnologia de um jeito simples,
+            para que ele saia com a escolha certa — e com vontade de voltar.
+          </p>
+          <p>
+            Fora do trabalho, meu hobby é <strong>escutar música</strong>: sertanejo, pagode, samba, funk, rap, trap, rock e pop.
+          </p>
+
+          <ul class="stats" aria-label="Alguns números">
+            <li class="stat">
+              <span class="stat__number gradient-text" data-count="5" data-prefix="+">+5</span>
+              <span class="stat__label">anos em vendas</span>
+            </li>
+            <li class="stat">
+              <span class="stat__number gradient-text" data-count="1000" data-prefix="+">+1000</span>
+              <span class="stat__label">clientes atendidos</span>
+            </li>
+            <li class="stat">
+              <span class="stat__number gradient-text" data-count="4">4</span>
+              <span class="stat__label">estilos musicais favoritos</span>
+            </li>
+          </ul>
+
+          <div class="hero__buttons hero__buttons--left">
+            <a href="contato.html" class="btn btn--primary">Fale comigo</a>
+            <a href="musica.html" class="btn btn--outline"><i class="fa-solid fa-headphones" aria-hidden="true"></i> Meu hobby</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Habilidades</span>
+          <h2 class="section__title">O que eu faço <span class="gradient-text">de melhor</span></h2>
+          <p class="section__subtitle">Competências que desenvolvi em anos de balcão, metas e muito atendimento.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill reveal">
+            <div class="skill__header"><span><i class="fa-solid fa-headset" aria-hidden="true"></i> Atendimento ao cliente</span><span class="skill__percent">95%</span></div>
+            <div class="skill__bar" role="progressbar" aria-label="Atendimento ao cliente" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><div class="skill__fill" data-level="95"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill__header"><span><i class="fa-solid fa-comments" aria-hidden="true"></i> Comunicação</span><span class="skill__percent">90%</span></div>
+            <div class="skill__bar" role="progressbar" aria-label="Comunicação" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="skill__fill" data-level="90"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill__header"><span><i class="fa-solid fa-handshake" aria-hidden="true"></i> Negociação</span><span class="skill__percent">90%</span></div>
+            <div class="skill__bar" role="progressbar" aria-label="Negociação" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="skill__fill" data-level="90"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill__header"><span><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Conhecimento de produtos</span><span class="skill__percent">90%</span></div>
+            <div class="skill__bar" role="progressbar" aria-label="Conhecimento de produtos" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="skill__fill" data-level="90"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill__header"><span><i class="fa-solid fa-magnifying-glass-dollar" aria-hidden="true"></i> Prospecção de clientes</span><span class="skill__percent">80%</span></div>
+            <div class="skill__bar" role="progressbar" aria-label="Prospecção de clientes" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><div class="skill__fill" data-level="80"></div></div>
+          </div>
+          <div class="skill reveal">
+            <div class="skill__header"><span><i class="fa-solid fa-heart" aria-hidden="true"></i> Pós-venda e relacionamento</span><span class="skill__percent">85%</span></div>
+            <div class="skill__bar" role="progressbar" aria-label="Pós-venda e relacionamento" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><div class="skill__fill" data-level="85"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRAJETÓRIA ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Trajetória</span>
+          <h2 class="section__title">Minha <span class="gradient-text">jornada</span></h2>
+          <p class="section__subtitle">Os passos que me trouxeram até aqui.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date">O começo</span>
+            <h3 class="timeline__title">Primeiro emprego em vendas</h3>
+            <p class="timeline__text">Comecei no atendimento e descobri que gosto de conversar com as pessoas e entender o que elas procuram.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date">Tecnologia</span>
+            <h3 class="timeline__title">Vendas de eletrônicos</h3>
+            <p class="timeline__text">Passei a vender celulares, notebooks, acessórios e planos, e aprendi a traduzir especificações técnicas para a linguagem do cliente.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date">Hoje</span>
+            <h3 class="timeline__title">Mais de 5 anos de experiência</h3>
+            <p class="timeline__text">Atendimento consultivo, negociação e relacionamento com clientes que voltam e indicam amigos e família.</p>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date">2026</span>
+            <h3 class="timeline__title">Novos aprendizados: este site</h3>
+            <p class="timeline__text">Fiz um curso de criação de sites e este portfólio, feito com HTML, CSS e JavaScript, é o meu projeto final.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= HOBBY ================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__icon" aria-hidden="true"><i class="fa-solid fa-headphones"></i></div>
+          <h2 class="cta__title">Fora do trabalho, <span class="gradient-text">é música</span></h2>
+          <p class="cta__text">Meu hobby é escutar música. Conheça os estilos que fazem parte do meu dia e o que eles me ensinaram sobre vendas.</p>
+          <a href="musica.html" class="btn btn--primary">Ver minha página de música <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="../index.html" class="logo" aria-label="Página inicial">Seu Nome<span class="logo__dot">.</span></a>
+        <ul class="footer__links">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="musica.html">Música</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <ul class="social" aria-label="Redes sociais">
+          <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <p class="footer__copy">&copy; <span data-year>2026</span> Seu Nome. Feito com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/sobre.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Capa: Funk, rap e trap (microfone e caixas de som) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Ondas sonoras -->
+  <g fill="none" stroke="url(#neon)" stroke-width="5" stroke-linecap="round" opacity=".7">
+    <path d="M120 120 a110 110 0 0 0 0 160"/>
+    <path d="M95 100 a140 140 0 0 0 0 200" opacity=".6"/>
+    <path d="M280 120 a110 110 0 0 1 0 160"/>
+    <path d="M305 100 a140 140 0 0 1 0 200" opacity=".6"/>
+  </g>
+
+  <!-- Caixas de som -->
+  <g>
+    <rect x="22" y="200" width="70" height="110" rx="10" fill="#111827" stroke="#334155" stroke-width="3"/>
+    <circle cx="57" cy="232" r="14" fill="#1e293b" stroke="#22d3ee" stroke-width="3"/>
+    <circle cx="57" cy="278" r="22" fill="#1e293b" stroke="#22d3ee" stroke-width="3"/>
+    <circle cx="57" cy="278" r="7" fill="#22d3ee"/>
+    <rect x="308" y="200" width="70" height="110" rx="10" fill="#111827" stroke="#334155" stroke-width="3"/>
+    <circle cx="343" cy="232" r="14" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+    <circle cx="343" cy="278" r="22" fill="#1e293b" stroke="#f472b6" stroke-width="3"/>
+    <circle cx="343" cy="278" r="7" fill="#f472b6"/>
+  </g>
+
+  <!-- Microfone -->
+  <g transform="rotate(-12 200 200)">
+    <rect x="176" y="70" width="48" height="84" rx="24" fill="#cbd5e1"/>
+    <g stroke="#64748b" stroke-width="2">
+      <line x1="180" y1="90" x2="220" y2="90"/>
+      <line x1="178" y1="104" x2="222" y2="104"/>
+      <line x1="178" y1="118" x2="222" y2="118"/>
+      <line x1="180" y1="132" x2="220" y2="132"/>
+    </g>
+    <rect x="186" y="150" width="28" height="16" rx="4" fill="#475569"/>
+    <rect x="192" y="164" width="16" height="110" rx="7" fill="#1e293b"/>
+    <rect x="192" y="190" width="16" height="10" fill="#f472b6"/>
+  </g>
+
+</svg>

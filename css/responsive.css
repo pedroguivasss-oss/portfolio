@@ -1,0 +1,251 @@
+/* ==========================================================
+   PORTFÓLIO — DESIGN RESPONSIVO (responsive.css)
+   ----------------------------------------------------------
+   O style.css já é "mobile-first" (pensado para celular).
+   Aqui ficam os ajustes por tamanho de tela (media queries):
+
+   - até 380px  → celulares pequenos
+   - 600px+     → celulares grandes / tablets em pé
+   - 900px+     → tablets deitados, notebooks e desktops
+   - 1200px+    → telas grandes
+   ========================================================== */
+
+
+/* ============ CELULARES PEQUENOS (até 380px) ============ */
+@media (max-width: 380px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .hero__buttons .btn,
+  .hero__buttons--left .btn {
+    width: 100%;
+  }
+
+  .stats {
+    gap: 8px;
+  }
+
+  .stat__label {
+    font-size: 0.72rem;
+  }
+
+  .moments {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .cta {
+    padding: 24px 18px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+  }
+}
+
+
+/* ============ CELULARES GRANDES / TABLETS (600px+) ============ */
+@media (min-width: 600px) {
+  .container {
+    padding-inline: 28px;
+  }
+
+  .section {
+    padding-block: 88px;
+  }
+
+  .section--flush-top {
+    padding-top: 16px;
+  }
+
+  .grid--music {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Nome e e-mail lado a lado no formulário */
+  .form__row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form {
+    padding: 36px 32px;
+  }
+
+  /* Seletor de estilos: capa ao lado das informações */
+  .styles-widget {
+    padding: 28px;
+  }
+
+  .styles-widget__panel {
+    grid-template-columns: 200px 1fr;
+    gap: 28px;
+  }
+
+  .styles-widget__cover {
+    max-width: none;
+  }
+
+  .cta {
+    padding: 64px 40px;
+  }
+
+  .footer__top {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer__copy {
+    text-align: left;
+  }
+}
+
+
+/* ============ NOTEBOOKS E DESKTOPS (900px+) ============ */
+@media (min-width: 900px) {
+  :root {
+    --header-h: 80px;
+  }
+
+  .container {
+    padding-inline: 32px;
+  }
+
+  .section {
+    padding-block: 104px;
+  }
+
+  /* --- Navegação: some o hambúrguer, links ficam em linha --- */
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    height: auto;
+    margin-left: auto;
+    padding: 0;
+    background: transparent;
+    transform: none;
+    visibility: visible;
+    transition: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  .nav__link {
+    position: relative;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+
+  .nav__link:hover,
+  .nav__link.is-active {
+    background: transparent;
+  }
+
+  /* Sublinhado animado */
+  .nav__link::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--gradient);
+    transform: scaleX(0);
+    transition: transform var(--transition);
+  }
+
+  .nav__link:hover::after,
+  .nav__link.is-active::after {
+    transform: scaleX(1);
+  }
+
+  /* --- Hero em duas colunas: texto à esquerda, imagem à direita --- */
+  .hero__inner {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 64px;
+    text-align: left;
+  }
+
+  .hero__image {
+    order: 0;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0;
+  }
+
+  .hero__desc {
+    margin-left: 0;
+  }
+
+  .hero__buttons,
+  .hero__text .social {
+    justify-content: flex-start;
+  }
+
+  /* --- Sobre: imagem e texto lado a lado --- */
+  .about {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 72px;
+  }
+
+  .about__image {
+    width: 100%;
+  }
+
+  /* Música: imagem à direita */
+  .about--reverse {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .about--reverse .about__image {
+    order: 2;
+  }
+
+  /* Página inicial: texto à esquerda, seletor de estilos à direita */
+  .music-teaser {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 64px;
+  }
+
+  /* --- Habilidades em duas colunas --- */
+  .skills {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 56px;
+    max-width: none;
+  }
+
+  /* --- Contato: informações à esquerda, formulário à direita --- */
+  .contact {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .form {
+    padding: 40px;
+  }
+
+  .cta {
+    padding: 80px 48px;
+  }
+}
+
+
+/* ============ TELAS GRANDES (1200px+) ============ */
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 5rem;
+  }
+
+  .grid--music {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
