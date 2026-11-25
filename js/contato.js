@@ -1,11 +1,10 @@
 // Formulário de contato
-// O GitHub Pages não envia e-mails, então, se tudo estiver preenchido,
-// o programa de e-mail de quem está visitando abre com a mensagem pronta.
+// Se o nome e a mensagem estiverem preenchidos, abre o WhatsApp
+// com a mensagem pronta para enviar.
 
 var formulario = document.getElementById('formulario');
 var aviso = document.getElementById('aviso');
 var campoNome = document.getElementById('nome');
-var campoEmail = document.getElementById('email');
 var campoMensagem = document.getElementById('mensagem');
 
 function mostrarErro(campo, texto) {
@@ -28,13 +27,6 @@ function validar() {
     mostrarErro(campoNome, '');
   }
 
-  if (!/^\S+@\S+\.\S+$/.test(campoEmail.value.trim())) {
-    mostrarErro(campoEmail, 'Escreva um e-mail válido.');
-    tudoCerto = false;
-  } else {
-    mostrarErro(campoEmail, '');
-  }
-
   if (campoMensagem.value.trim().length < 5) {
     mostrarErro(campoMensagem, 'Escreva sua mensagem.');
     tudoCerto = false;
@@ -54,12 +46,15 @@ formulario.addEventListener('submit', function (evento) {
   }
 
   var nome = campoNome.value.trim();
-  var corpo = campoMensagem.value.trim() + '\n\n' + nome + ' (' + campoEmail.value.trim() + ')';
+  var texto = 'Olá, Pedro! Meu nome é ' + nome + '. ' + campoMensagem.value.trim();
+  var link = 'https://wa.me/' + formulario.dataset.whatsapp + '?text=' + encodeURIComponent(texto);
 
-  window.location.href = 'mailto:' + formulario.dataset.email +
-    '?subject=' + encodeURIComponent('Contato pelo site') +
-    '&body=' + encodeURIComponent(corpo);
+  // Abre o WhatsApp em outra aba (no celular, abre o aplicativo)
+  var aba = window.open(link, '_blank');
+  if (!aba) {
+    window.location.href = link;
+  }
 
-  aviso.textContent = 'Obrigado, ' + nome + '! Seu programa de e-mail vai abrir com a mensagem.';
+  aviso.textContent = 'Obrigado, ' + nome + '! Se o WhatsApp não abrir, me chame no (61) 99978-5174.';
   formulario.reset();
 });

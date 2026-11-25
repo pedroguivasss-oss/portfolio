@@ -26,29 +26,23 @@
 
   <main class="container conteudo">
     <h1>Contato</h1>
-    <p>Se quiser falar comigo, pode me chamar por aqui:</p>
-
-    <ul class="lista">
-      <li>E-mail: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
-      <li>WhatsApp: <a href="https://wa.me/5500000000000" target="_blank" rel="noopener">(00) 00000-0000</a></li>
-      <li>Instagram: <a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener">@seu-usuario</a></li>
-    </ul>
+    <p>O jeito mais rápido de falar comigo é pelo WhatsApp:</p>
+    <p class="whatsapp">
+      <a href="https://wa.me/5561999785174" target="_blank" rel="noopener">(61) 99978-5174</a>
+    </p>
 
     <h2>Mandar uma mensagem</h2>
-    <form class="formulario" id="formulario" data-email="seuemail@exemplo.com" novalidate>
+    <p>Se preferir, escreva aqui. Ao enviar, o WhatsApp abre com a sua mensagem pronta.</p>
+    <form class="formulario" id="formulario" data-whatsapp="5561999785174" novalidate>
       <label for="nome">Nome</label>
       <input type="text" id="nome" name="nome" autocomplete="name">
       <span class="erro" id="erro-nome"></span>
 
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" autocomplete="email">
-      <span class="erro" id="erro-email"></span>
-
       <label for="mensagem">Mensagem</label>
-      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Ex.: Quero saber o preço do iPhone 15"></textarea>
       <span class="erro" id="erro-mensagem"></span>
 
-      <button type="submit">Enviar</button>
+      <button type="submit">Enviar pelo WhatsApp</button>
       <p class="aviso" id="aviso" role="status"></p>
     </form>
   </main>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sobre Pedro Guimarães Vasconcellos, vendedor de eletrônicos e tecnologia.">
+  <meta name="description" content="Sobre Pedro Guimarães Vasconcellos, vendedor na iMagic Store.">
   <title>Sobre | Pedro Guimarães Vasconcellos</title>
   <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/style.css">
@@ -28,18 +28,56 @@
     <h1>Sobre mim</h1>
     <p>Meu nome é Pedro Guimarães Vasconcellos e trabalho com vendas há mais de 5 anos.</p>
     <p>
-      Hoje vendo eletrônicos e tecnologia: celulares, notebooks, acessórios e outros aparelhos.
-      O que eu mais gosto no trabalho é conversar com o cliente, entender o que ele precisa e
-      ajudar a escolher o produto certo.
+      Hoje sou vendedor na iMagic Store, uma loja de iPhones novos e seminovos que também vende
+      acessórios e outros eletrônicos. Atendo todo tipo de cliente: quem vai comprar o primeiro
+      iPhone, quem quer trocar de modelo e quem só precisa de um carregador.
+    </p>
+    <p>
+      O que eu mais gosto no trabalho é conversar com as pessoas. Antes de mostrar qualquer aparelho,
+      procuro entender como o cliente usa o celular, quanto quer gastar e o que é mais importante
+      para ele, como câmera, bateria ou espaço. Assim fica mais fácil indicar o modelo certo,
+      sem empurrar o mais caro.
     </p>
 
-    <h2>No dia a dia</h2>
+    <h2>Como eu trabalho</h2>
     <ul class="lista">
-      <li>Atendimento ao cliente</li>
-      <li>Explicar a diferença entre os modelos e ajudar na escolha</li>
-      <li>Negociação e fechamento de vendas</li>
-      <li>Acompanhamento depois da compra</li>
+      <li>Escuto o cliente antes de oferecer qualquer produto</li>
+      <li>Explico a diferença entre os modelos com palavras simples</li>
+      <li>Mostro o aparelho e tiro as dúvidas na hora</li>
+      <li>Continuo à disposição depois da compra</li>
     </ul>
+
+    <h2>Na loja</h2>
+    <p>Algumas fotos com clientes depois da compra. Toque em uma foto para ver maior.</p>
+    <div class="galeria">
+      <figure>
+        <a href="../img/fotos/loja-cliente-1.jpg">
+          <img src="../img/fotos/loja-cliente-1.jpg" alt="Pedro, de boné e óculos, fazendo joinha ao lado de um cliente que segura um iPhone novo" width="900" height="1200" loading="lazy">
+        </a>
+        <figcaption>Entrega de um iPhone na iMagic Store.</figcaption>
+      </figure>
+      <figure>
+        <a href="../img/fotos/loja-cliente-2.jpg">
+          <img src="../img/fotos/loja-cliente-2.jpg" alt="Pedro atrás do balcão com um casal de clientes, cada um segurando seu celular novo" width="900" height="1200" loading="lazy">
+        </a>
+        <figcaption>Dois clientes saindo com celular novo.</figcaption>
+      </figure>
+    </div>
+
+    <h2>Fora do trabalho</h2>
+    <p>
+      Nas horas livres eu escuto muita música, que é o meu hobby (tem uma
+      <a href="musica.html">página só sobre isso</a>). Também gosto de aproveitar a folga
+      em lugares com natureza, como cachoeiras.
+    </p>
+    <div class="galeria">
+      <figure>
+        <a href="../img/fotos/cachoeira.jpg">
+          <img src="../img/fotos/cachoeira.jpg" alt="Selfie de Pedro de óculos escuros em frente a uma cachoeira" width="900" height="1200" loading="lazy">
+        </a>
+        <figcaption>Dia de cachoeira.</figcaption>
+      </figure>
+    </div>
 
     <h2>Sobre este site</h2>
     <p>Fiz este site como projeto final do curso, usando HTML, CSS e JavaScript.</p>
@@ -51,6 +89,14 @@
     </div>
   </footer>
 
+  <!-- Janela para ver a foto em tamanho maior (aberta pelo js/fotos.js) -->
+  <dialog class="foto-ampliada" id="foto-ampliada">
+    <button type="button" class="foto-ampliada__fechar" aria-label="Fechar foto">Fechar</button>
+    <img alt="">
+    <p></p>
+  </dialog>
+
   <script src="../js/main.js"></script>
+  <script src="../js/fotos.js"></script>
 </body>
 </html>

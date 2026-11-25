@@ -10,18 +10,20 @@ Site no ar: https://pedroguivasss-oss.github.io/portfolio/
 portfolio/
 ├── index.html          página inicial
 ├── pages/
-│   ├── sobre.html      sobre mim e o meu trabalho
+│   ├── sobre.html      sobre mim, meu trabalho e fotos
 │   ├── musica.html     meu hobby
-│   └── contato.html    contatos e formulário
+│   └── contato.html    WhatsApp e formulário
 ├── css/
 │   ├── style.css       estilos principais (celular primeiro)
 │   └── responsive.css  ajustes para tablet e computador
 ├── js/
 │   ├── main.js         menu do celular, página atual no menu e ano no rodapé
-│   └── contato.js      validação do formulário de contato
+│   ├── fotos.js        abre as fotos da página Sobre em tamanho maior
+│   └── contato.js      valida o formulário e abre o WhatsApp com a mensagem
 └── img/
     ├── favicon.svg     ícone da aba
-    └── foto.svg        espaço da foto (trocar por uma foto real)
+    ├── foto.svg        espaço da foto da página inicial
+    └── fotos/          fotos da página Sobre
 ```
 
 ## Requisitos

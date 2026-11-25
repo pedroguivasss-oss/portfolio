@@ -166,6 +166,85 @@ p {
 }
 
 
+.whatsapp {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Fotos da página Sobre */
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0 8px;
+}
+
+.galeria figure {
+  margin: 0;
+}
+
+.galeria a {
+  display: block;
+  cursor: zoom-in;
+}
+
+.galeria img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.galeria figcaption {
+  margin-top: 6px;
+  color: var(--texto-suave);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Janela com a foto ampliada */
+.foto-ampliada {
+  max-width: 94vw;
+  max-height: 94vh;
+  margin: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.foto-ampliada::backdrop {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.foto-ampliada img {
+  width: auto;
+  max-width: 94vw;
+  max-height: 82vh;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.foto-ampliada p {
+  margin: 8px 0 0;
+  color: #fff;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.foto-ampliada__fechar {
+  display: block;
+  margin: 0 0 8px auto;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  background: none;
+  color: #fff;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+
 /* Formulário de contato */
 .formulario {
   display: flex;
