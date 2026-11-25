@@ -3,177 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Entre em contato com Seu Nome, vendedor de eletrônicos e tecnologia.">
-  <title>Contato | Seu Nome</title>
-
+  <meta name="description" content="Contato de Pedro Guimarães Vasconcellos.">
+  <title>Contato | Pedro Guimarães Vasconcellos</title>
   <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
-
-  <script src="../js/theme.js"></script>
 </head>
-<body data-page="contato">
-  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+<body data-pagina="contato">
 
-  <!-- ================= CABEÇALHO ================= -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="../index.html" class="logo" aria-label="Página inicial">Seu Nome<span class="logo__dot">.</span></a>
-
-      <nav class="nav" id="nav" aria-label="Menu principal">
-        <ul class="nav__list">
-          <li><a href="../index.html" class="nav__link" data-nav="inicio">Início</a></li>
-          <li><a href="sobre.html" class="nav__link" data-nav="sobre">Sobre</a></li>
-          <li><a href="musica.html" class="nav__link" data-nav="musica">Música</a></li>
-          <li><a href="contato.html" class="nav__link" data-nav="contato">Contato</a></li>
-        </ul>
+  <header class="topo">
+    <div class="container topo__conteudo">
+      <a href="../index.html" class="topo__nome">Pedro Guimarães Vasconcellos</a>
+      <button class="menu-botao" id="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="menu" id="menu" aria-label="Menu principal">
+        <a href="../index.html" data-link="inicio">Início</a>
+        <a href="sobre.html" data-link="sobre">Sobre</a>
+        <a href="musica.html" data-link="musica">Música</a>
+        <a href="contato.html" data-link="contato">Contato</a>
       </nav>
-
-      <div class="header__actions">
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar tema">
-          <i class="fa-solid fa-sun" aria-hidden="true"></i>
-          <i class="fa-solid fa-moon" aria-hidden="true"></i>
-        </button>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
     </div>
   </header>
 
-  <main id="conteudo">
+  <main class="container conteudo">
+    <h1>Contato</h1>
+    <p>Se quiser falar comigo, pode me chamar por aqui:</p>
 
-    <!-- ================= TÍTULO DA PÁGINA ================= -->
-    <section class="page-hero">
-      <div class="container">
-        <p class="breadcrumb reveal"><a href="../index.html">Início</a> / Contato</p>
-        <h1 class="page-hero__title reveal">Vamos <span class="gradient-text">conversar</span>?</h1>
-        <p class="page-hero__subtitle reveal delay-1">Quer ajuda para escolher um celular, notebook ou outro eletrônico? Tem uma proposta de trabalho? Me chame pelo canal que preferir.</p>
-      </div>
-    </section>
+    <ul class="lista">
+      <li>E-mail: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></li>
+      <li>WhatsApp: <a href="https://wa.me/5500000000000" target="_blank" rel="noopener">(00) 00000-0000</a></li>
+      <li>Instagram: <a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener">@seu-usuario</a></li>
+    </ul>
 
-    <!-- ================= CONTATO ================= -->
-    <section class="section section--flush-top">
-      <div class="container contact">
+    <h2>Mandar uma mensagem</h2>
+    <form class="formulario" id="formulario" data-email="seuemail@exemplo.com" novalidate>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" autocomplete="name">
+      <span class="erro" id="erro-nome"></span>
 
-        <!-- Informações de contato -->
-        <div class="contact__info reveal">
-          <a class="contact__item" href="https://wa.me/5500000000000" target="_blank" rel="noopener">
-            <span class="contact__icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
-            <span>
-              <span class="contact__label">WhatsApp</span>
-              <span class="contact__value">(00) 00000-0000</span>
-            </span>
-          </a>
-          <a class="contact__item" href="mailto:seuemail@exemplo.com">
-            <span class="contact__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
-            <span>
-              <span class="contact__label">E-mail</span>
-              <span class="contact__value">seuemail@exemplo.com</span>
-            </span>
-          </a>
-          <a class="contact__item" href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener">
-            <span class="contact__icon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
-            <span>
-              <span class="contact__label">Instagram</span>
-              <span class="contact__value">@seu-usuario</span>
-            </span>
-          </a>
-          <a class="contact__item" href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
-            <span class="contact__icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></span>
-            <span>
-              <span class="contact__label">LinkedIn</span>
-              <span class="contact__value">/in/seu-usuario</span>
-            </span>
-          </a>
-          <div class="contact__item contact__item--static">
-            <span class="contact__icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
-            <span>
-              <span class="contact__label">Localização</span>
-              <span class="contact__value">Sua Cidade, Brasil</span>
-            </span>
-          </div>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" autocomplete="email">
+      <span class="erro" id="erro-email"></span>
 
-          <p class="contact__note">
-            <span class="status-dot" aria-hidden="true"></span>
-            Disponível para atendimento e novas oportunidades.
-          </p>
-        </div>
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+      <span class="erro" id="erro-mensagem"></span>
 
-        <!-- Formulário (validado com JavaScript) -->
-        <form class="form reveal delay-1" id="contact-form" data-email="seuemail@exemplo.com" novalidate>
-          <h2 class="form__title">Envie uma mensagem</h2>
-
-          <div class="form__row">
-            <div class="form__group">
-              <label class="form__label" for="nome">Nome</label>
-              <input class="form__input" type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" aria-describedby="erro-nome">
-              <span class="form__error" id="erro-nome"></span>
-            </div>
-            <div class="form__group">
-              <label class="form__label" for="email">E-mail</label>
-              <input class="form__input" type="email" id="email" name="email" placeholder="voce@email.com" autocomplete="email" aria-describedby="erro-email">
-              <span class="form__error" id="erro-email"></span>
-            </div>
-          </div>
-
-          <div class="form__group">
-            <label class="form__label" for="assunto">Assunto</label>
-            <input class="form__input" type="text" id="assunto" name="assunto" placeholder="Ex.: quero trocar de celular" aria-describedby="erro-assunto">
-            <span class="form__error" id="erro-assunto"></span>
-          </div>
-
-          <div class="form__group">
-            <label class="form__label" for="mensagem">Mensagem</label>
-            <textarea class="form__input" id="mensagem" name="mensagem" rows="6" maxlength="500" placeholder="Conte o que você procura ou como posso ajudar..." aria-describedby="erro-mensagem contador"></textarea>
-            <div class="form__meta">
-              <span class="form__error" id="erro-mensagem"></span>
-              <span class="form__counter" id="contador">0/500</span>
-            </div>
-          </div>
-
-          <button class="btn btn--primary btn--block" type="submit">
-            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enviar mensagem
-          </button>
-
-          <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
+      <button type="submit">Enviar</button>
+      <p class="aviso" id="aviso" role="status"></p>
+    </form>
   </main>
 
-  <!-- ================= RODAPÉ ================= -->
-  <footer class="footer">
+  <footer class="rodape">
     <div class="container">
-      <div class="footer__top">
-        <a href="../index.html" class="logo" aria-label="Página inicial">Seu Nome<span class="logo__dot">.</span></a>
-        <ul class="footer__links">
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="musica.html">Música</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <ul class="social" aria-label="Redes sociais">
-          <li><a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-      <p class="footer__copy">&copy; <span data-year>2026</span> Seu Nome. Feito com HTML, CSS e JavaScript.</p>
+      <p>&copy; <span id="ano">2026</span> Pedro Guimarães Vasconcellos</p>
     </div>
   </footer>
 
-  <button class="back-to-top" id="back-to-top" type="button" aria-label="Voltar ao topo">
-    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-  </button>
-
-  <script src="../js/main.js" defer></script>
-  <script src="../js/contato.js" defer></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/contato.js"></script>
 </body>
 </html>
